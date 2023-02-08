@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-container {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap-reverse; */
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.hero-content .title h1 {
+    font-size: 3.75rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    max-width: 42rem;
+}
+
+.hero-content .title p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 2rem;
+    color: rgb(107, 114, 128);
+    max-width: 42rem;
+}
+
+.hero-content .hero-image {
+    width: 50%;
+    height: 100%;
+}
+
+.hero-content .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-brands {
+    margin-top: 4rem;
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr); */
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.one-company-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-company-logo .logo {
+    height: 2rem;
+}
+
+.one-company-logo .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.one-company-logo .name-brand {
+    font-size: 1.875rem;
+    color: rgb(107, 114, 128);
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.work-tools-container {
+    background-color: rgb(249, 250, 251);
+}
+
+
+.work-tools-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.work-tools-content .desc-tools {
+    width: 47%;
+}
+
+.desc-tools .title {
+    color: rgb(17, 24, 39);
+    font-weight: 800;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.025em;
+}
+
+.desc-tools .desc {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: rgb(107, 114, 128);
+}
+
+.desc-tools ul {
+    padding-top: 2rem;
+    list-style: none;
+    border-top: 1px solid rgb(229, 231, 235);
+    margin-bottom: 1.75rem;
+}
+
+.desc-tools ul li {
+    margin-bottom: 1.25rem;
+}
+
+.desc-tools .mini-desc {
+    color: rgb(17, 24, 39);
+    line-height: 1.25;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.work-tools-content .img-tools {
+    height: auto;
+    width: 47%;
+}
+
+.work-tools-content .img-tools img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.work-tools-content.two {
+    padding-top: 0;
+
+}
+
+.final-cta-content {
+    padding: 4rem 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.final-cta-content h3 {
+    color: rgb(17, 24, 39);
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+    font-weight: 800;
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+}
+
+.final-cta-content form input {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    max-width: 370px;
+    width: 100%;
+    
+    margin: 0 auto;
+    min-height: 44px;
+    border: 1px solid rgb(107, 114, 128);
+    border-radius: 4px;
+    outline-color: rgb(144, 97, 249);
+}
+
+.final-cta-content button {
+    background-color: rgb(144, 97, 249);
+    border-radius: 6px;
+    border-width: 0;
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .1) 0 2px 5px 0, rgba(0, 0, 0, .07) 0 1px 1px 0;
+    color: #fff;
+    cursor: pointer;
+    height: 44px;
+    max-width: 370px;
+    width: 100%;
+    line-height: 1.15;
+    margin: 12px 0 0;
+    outline: none;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s, box-shadow .08s ease-in;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.final-cta-content button:focus{
+    box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .hero-content {
+        flex-wrap: wrap-reverse;
+    }
+
+    .hero-content .title h1 {
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .hero-content .title {
+        width: 100%;
+    }
+
+    .hero-content .hero-image {
+        width: 100%;
+        display: none;
+    }
+
+    .hero-brands {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+
+    .one-company-logo {
+        justify-content: flex-start;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    .work-tools-content {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .work-tools-content .img-tools {
+        display: none;
+    }
+
+    .work-tools-content .desc-tools {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero-container {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+
+    }
+
+    .hero-content .title h1 {
+        font-size: 2.25rem;
+
+    }
+
+    .hero-content .title p {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-brands {
+        margin-top: 1.5rem;
+    }
+
+    .one-company-logo .name-brand {
+        font-size: 1.35rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-brands {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
