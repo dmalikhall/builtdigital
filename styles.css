@@ -192,7 +192,6 @@
     max-width: 370px;
     width: 100%;
     line-height: 1.15;
-    margin: 12px 0 0;
     outline: none;
     text-align: center;
     text-transform: none;
@@ -204,6 +203,12 @@
 
 .final-cta-content button:focus{
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 
